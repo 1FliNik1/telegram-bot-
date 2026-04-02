@@ -1,0 +1,25 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--tg-bg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 10px var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.context {
+  font-size: var(--font-sm);
+  color: var(--tg-hint);
+  flex: 1;
+}
+
+.price {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--tg-text);
+  margin-left: var(--spacing-sm);
+  flex-shrink: 0;
+}

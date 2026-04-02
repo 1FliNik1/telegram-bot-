@@ -1,0 +1,115 @@
+.page {
+  min-height: 100vh;
+  background: var(--tg-secondary-bg);
+}
+
+.content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.heading {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--tg-text);
+}
+
+.calendar {
+  background: var(--tg-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+}
+
+.weekRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: var(--spacing-sm);
+}
+
+.weekDay {
+  text-align: center;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--tg-hint);
+  padding: 4px 0;
+}
+
+.daysGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.dayCell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  position: relative;
+  transition: background 0.15s ease;
+}
+
+.available {
+  background: rgba(var(--tg-button), 0.08);
+}
+
+.available:active {
+  background: var(--tg-button);
+}
+
+.available:active .dayNum {
+  color: var(--tg-button-text);
+}
+
+.unavailable {
+  opacity: 0.35;
+}
+
+.dayNum {
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--tg-text);
+}
+
+.available .dayNum {
+  color: var(--tg-button);
+  font-weight: 700;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--tg-button);
+  margin-top: 2px;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-sm);
+  color: var(--tg-hint);
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tg-button);
+  display: inline-block;
+}
+
+.legendEmpty {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tg-hint);
+  opacity: 0.4;
+  display: inline-block;
+  margin-left: var(--spacing-sm);
+}

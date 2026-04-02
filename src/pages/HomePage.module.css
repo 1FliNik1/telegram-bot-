@@ -1,0 +1,114 @@
+.page {
+  min-height: 100vh;
+  background: var(--tg-secondary-bg);
+}
+
+.header {
+  background: var(--tg-bg);
+  padding: 16px var(--spacing-md) 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.salonName {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--tg-text);
+}
+
+.content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.greeting {
+  padding: var(--spacing-sm) 0;
+}
+
+.greetingText {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  color: var(--tg-text);
+}
+
+/* Upcoming block */
+.upcomingBlock {
+  background: var(--tg-button);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: 100%;
+  text-align: left;
+  color: var(--tg-button-text);
+}
+
+.upcomingEmoji {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.upcomingInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.upcomingService {
+  font-size: var(--font-md);
+  font-weight: 600;
+}
+
+.upcomingMaster {
+  font-size: var(--font-sm);
+  opacity: 0.85;
+}
+
+.upcomingCountdown {
+  font-size: var(--font-sm);
+  opacity: 0.7;
+}
+
+.upcomingArrow {
+  font-size: 24px;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+/* Nav grid */
+.navGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-sm);
+}
+
+.navCard {
+  background: var(--tg-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.navCard:active {
+  transform: scale(0.96);
+  opacity: 0.8;
+}
+
+.navEmoji {
+  font-size: 36px;
+}
+
+.navLabel {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--tg-text);
+}

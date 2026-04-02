@@ -1,0 +1,86 @@
+.page {
+  min-height: 100vh;
+  background: var(--tg-secondary-bg);
+}
+
+.header {
+  background: var(--tg-bg);
+  padding: 16px var(--spacing-md) 12px;
+}
+
+.title {
+  font-size: var(--font-xl);
+  font-weight: 700;
+}
+
+.content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.skeletonCard {
+  background: var(--tg-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+/* Dialog */
+.dialogOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 200;
+  display: flex;
+  align-items: flex-end;
+}
+
+.dialog {
+  width: 100%;
+  background: var(--tg-bg);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  padding: var(--spacing-lg) var(--spacing-md) 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.dialogWarning {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: #b8860b;
+}
+
+.dialogText {
+  font-size: var(--font-sm);
+  color: var(--tg-hint);
+}
+
+.dialogActions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.dialogCancel {
+  flex: 1;
+  padding: 13px;
+  border-radius: var(--radius-xl);
+  background: var(--tg-secondary-bg);
+  color: var(--tg-text);
+  font-size: var(--font-sm);
+  font-weight: 600;
+}
+
+.dialogConfirm {
+  flex: 1;
+  padding: 13px;
+  border-radius: var(--radius-xl);
+  background: rgba(255, 60, 60, 0.1);
+  color: var(--tg-destructive);
+  font-size: var(--font-sm);
+  font-weight: 600;
+}

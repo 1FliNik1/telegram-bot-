@@ -1,0 +1,26 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--tg-bg);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--tg-bg);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-sm);
+  z-index: 10;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  color: var(--tg-text);
+}
+
+.content {
+  flex: 1;
+  padding: var(--spacing-md);
+}

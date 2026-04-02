@@ -1,0 +1,82 @@
+.card {
+  background: var(--tg-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.serviceName {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--tg-text);
+}
+
+.statusBadge {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: var(--radius-xl);
+  white-space: nowrap;
+}
+
+.pending {
+  background: rgba(255, 200, 0, 0.15);
+  color: #b8860b;
+}
+
+.confirmed {
+  background: rgba(0, 180, 80, 0.12);
+  color: #1a7a3f;
+}
+
+.cancelled {
+  background: rgba(255, 60, 60, 0.1);
+  color: var(--tg-destructive);
+}
+
+.completed {
+  background: var(--tg-secondary-bg);
+  color: var(--tg-hint);
+}
+
+.meta {
+  font-size: var(--font-sm);
+  color: var(--tg-hint);
+}
+
+.price {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--tg-text);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-xs);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cancelBtn {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--tg-destructive);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 60, 60, 0.08);
+}

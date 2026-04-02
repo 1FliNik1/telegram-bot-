@@ -1,0 +1,25 @@
+.toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  background: var(--tg-text);
+  color: var(--tg-bg);
+  padding: 12px 20px;
+  border-radius: var(--radius-xl);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(10px);
+}

@@ -1,0 +1,60 @@
+.page {
+  min-height: 100vh;
+  background: var(--tg-secondary-bg);
+}
+
+.content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.heading {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--tg-text);
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.group {
+  background: var(--tg-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+}
+
+.groupLabel {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--tg-hint);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.slotsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.slot {
+  padding: 10px 16px;
+  background: var(--tg-secondary-bg);
+  border-radius: var(--radius-md);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--tg-text);
+  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+.slot:active {
+  background: var(--tg-button);
+  color: var(--tg-button-text);
+  transform: scale(0.95);
+}

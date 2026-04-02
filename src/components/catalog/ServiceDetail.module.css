@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.imageWrap {
+  width: 100%;
+  height: 220px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--tg-secondary-bg);
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  padding: var(--spacing-md) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.name {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  color: var(--tg-text);
+}
+
+.meta {
+  font-size: var(--font-md);
+  color: var(--tg-hint);
+}
+
+.description {
+  font-size: var(--font-md);
+  color: var(--tg-text);
+  line-height: 1.5;
+}
+
+.masters {
+  font-size: var(--font-sm);
+  color: var(--tg-hint);
+}
+
+.bookButton {
+  width: 100%;
+  padding: 14px;
+  background: var(--tg-button);
+  color: var(--tg-button-text);
+  border-radius: var(--radius-xl);
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-top: var(--spacing-sm);
+}

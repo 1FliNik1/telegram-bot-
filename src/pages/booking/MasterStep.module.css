@@ -1,0 +1,96 @@
+.page {
+  min-height: 100vh;
+  background: var(--tg-secondary-bg);
+}
+
+.content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.heading {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--tg-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.masterCard {
+  background: var(--tg-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  width: 100%;
+  text-align: left;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.masterCard:active {
+  transform: scale(0.98);
+  opacity: 0.8;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--tg-secondary-bg);
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.masterInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.masterName {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--tg-text);
+}
+
+.masterBio {
+  font-size: var(--font-sm);
+  color: var(--tg-hint);
+}
+
+.masterPrice {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--tg-button);
+  margin-top: 2px;
+}
+
+.arrow {
+  font-size: 22px;
+  color: var(--tg-hint);
+}
+
+.skeletonCard {
+  background: var(--tg-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.skeletonInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
